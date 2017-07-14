@@ -34,7 +34,7 @@ public class StylistTest {
 
   @Test
   public void all_returnsAllInstancesOfStylist_true() {
-    Stylist firstStylist = new Stylist(Stylist);
+    Stylist firstStylist = new Stylist("Stylist A");
     firstStylist.save();
     Stylist secondStylist = new Stylist("Stylist B");
     secondStylist.save();
