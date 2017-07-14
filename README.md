@@ -22,23 +22,24 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _In the browser, enter localhost:4567_
 
 ## To Backup Databases:
-* _Clear the tables (The first two steps are optional):  from psql, enter:_
+* _Clear the tables (skip the first two DELETE steps if you want to keep the data in the database):  from psql, enter:_
 * _DELETE FROM clients;_
 * _DELETE FROM stylists;_
 * _DROP DATABASE hair_salon_test;_
-* _In your "normal" terminal window, not psql, enter: pg_dump to_do > media.sql_
+* _In your "normal" terminal window, not psql, enter: pg_dump hair_salon > media.sql_
 * _Add changes via add . and commit your changes_
 * _Upload project to Github._
 
 ## To Restore Databases:
-* _Clone the database from Github_
-* _Connect to psql and run: CREATE DATABASE to_do;_
-* _Run the following command in the terminal (not psql): psql to_do < media.sql_
-* _Confirm success.  Switch to psql and run:  \c to_do_
+* _Clone or download the hair-salon project from Github_
+* _At terminal, enter postgres_
+* _In a different terminal window, enter psql_
+* _From psql, run: CREATE DATABASE hair_salon;_
+* _Run the following command in the terminal (not psql): psql hair_salon < media.sql_
+* _Confirm success.  Switch to psql and run:  \c hair_salon_
 * _Then run: \dt_
 
 ## Known Bugs
-
 _No known issues that I am aware of._
 
 ## Support and contact details
