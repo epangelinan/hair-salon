@@ -10,6 +10,7 @@ _This is a web app that allows the user to view the list of stylists and their c
 
 ## Setup/Installation Requirements
 
+* _Clone or download the hair-salon project from Github_
 * _At terminal, enter postgres_
 * _In a different terminal window, enter psql_
 * _Create the databases and tables as follows. In psql, enter:_
@@ -18,6 +19,7 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistID int);_
 * _CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);_
 * _CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;_
+* _Run the following command in the terminal (not psql): psql hair_salon < media.sql_
 * _To run the program, go into the project folder on the terminal and enter gradle run_
 * _In the browser, enter localhost:4567_
 
@@ -31,7 +33,7 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _Upload project to Github._
 
 ## To Restore Databases:
-* _Clone or download the hair-salon project from Github_
+* _With the hair-salon project cloned or downloaded from Github:_
 * _At terminal, enter postgres_
 * _In a different terminal window, enter psql_
 * _From psql, run: CREATE DATABASE hair_salon;_
