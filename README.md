@@ -13,19 +13,19 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _At terminal, enter postgres_
 * _In a different terminal window, enter psql_
 * _Create the databases and tables as follows. In psql, enter:_
-* _CREATE DATABASE to_do;_
+* _CREATE DATABASE hair_salon;_
 * _\c to_do;_
-* _CREATE TABLE tasks (id serial PRIMARY KEY, description varchar, categoryId int);_
-* _CREATE TABLE categories (id serial PRIMARY KEY, name varchar);_
-* _CREATE DATABASE to_do_test WITH TEMPLATE to_do_
+* _CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistID int);_
+* _CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);_
+* _CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;_
 * _To run the program, go into the project folder on the terminal and enter gradle run_
 * _In the browser, enter localhost:4567_
 
 ## To Backup Databases:
-* _Clear the tables:  from psql, enter:_
-* _DELETE FROM tasks;_
-* _DELETE FROM categories;_
-* _DROP DATABASE to_do_test;_
+* _Clear the tables (The first two steps are optional):  from psql, enter:_
+* _DELETE FROM clients;_
+* _DELETE FROM stylists;_
+* _DROP DATABASE hair_salon_test;_
 * _In your "normal" terminal window, not psql, enter: pg_dump to_do > media.sql_
 * _Add changes via add . and commit your changes_
 * _Upload project to Github._
