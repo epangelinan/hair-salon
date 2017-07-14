@@ -14,7 +14,7 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _In a different terminal window, enter psql_
 * _Create the databases and tables as follows. In psql, enter:_
 * _CREATE DATABASE hair_salon;_
-* _\c to_do;_
+* _\c hair_salon;_
 * _CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistID int);_
 * _CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);_
 * _CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;_
