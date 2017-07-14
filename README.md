@@ -22,7 +22,7 @@ _This is a web app that allows the user to view the list of stylists and their c
 * _In the browser, enter localhost:4567_
 
 ## To Backup Databases:
-* _Clear the tables (skip the first two DELETE steps if you want to keep the data in the database):  from psql, enter:_
+* _Clear the tables (skip the first two DELETE steps if you want to keep the data in the database).  From psql, enter:_
 * _DELETE FROM clients;_
 * _DELETE FROM stylists;_
 * _DROP DATABASE hair_salon_test;_
